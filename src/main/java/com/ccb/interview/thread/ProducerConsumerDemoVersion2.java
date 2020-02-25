@@ -1,13 +1,11 @@
 package com.ccb.interview.thread;
 
-import java.util.List;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.TimeUnit;
 
 /**
  *使用阻塞队列实现生产者消费者模式
- *
  */
 class MyResource {
     private volatile boolean flag = true;
