@@ -15,7 +15,7 @@ public class CyclicBarrierDemo {
         for (int i = 1; i <= 7; i++) {
             int tmp = i;
             new Thread(() -> {
-                System.out.println("集齐第" + tmp + "颗龙珠");
+                System.out.println("获得" + tmp + "星龙珠");
                 try {
                     cyclicBarrier.await();
                 } catch (InterruptedException | BrokenBarrierException e) {
