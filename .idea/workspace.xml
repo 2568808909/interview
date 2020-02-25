@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7183bb20-410a-4754-992d-2cda1cbd6680" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ccb/interview/thread/SyncAndReentrantLockDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ccb/interview/thread/BlockingQueueDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ccb/interview/thread/ProducerConsumerDemoVersion2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ccb/interview/thread/SyncAndReentrantLockDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="56" column="9" lean-forward="true" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+            <state relative-caret-position="546">
+              <caret line="106" column="24" selection-start-line="106" selection-start-column="24" selection-end-line="106" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -31,9 +32,43 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ccb/interview/thread/ProducerConsumerDemoVersion2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1579#1580#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ccb/interview/thread/BlockingQueueDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/util/concurrent/BlockingQueue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="275" column="6" selection-start-line="275" selection-start-column="6" selection-end-line="275" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/util/concurrent/locks/Lock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
+            <state relative-caret-position="4554">
               <caret line="231" column="9" selection-start-line="231" selection-start-column="9" selection-end-line="231" selection-end-column="9" />
             </state>
           </provider>
@@ -42,8 +77,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/util/concurrent/locks/ReentrantLock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="334" column="27" lean-forward="true" selection-start-line="334" selection-start-column="27" selection-end-line="334" selection-end-column="27" />
+            <state relative-caret-position="6486">
+              <caret line="334" column="27" selection-start-line="334" selection-start-column="27" selection-end-line="334" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -51,8 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="1221" column="19" lean-forward="true" selection-start-line="1221" selection-start-column="19" selection-end-line="1221" selection-end-column="19" />
+            <state relative-caret-position="26818">
+              <caret line="1221" column="19" selection-start-line="1221" selection-start-column="19" selection-end-line="1221" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -102,6 +137,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ccb/interview/thread/SemaphoreDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ccb/interview/thread/ProducerConsumerDemoVersion1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ccb/interview/thread/SyncAndReentrantLockDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccb/interview/thread/ProducerConsumerDemoVersion2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccb/interview/thread/BlockingQueueDemo.java" />
       </list>
     </option>
   </component>
@@ -125,8 +162,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -215,20 +252,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SyncAndReentrantLockDemo">
-    <configuration name="CountDownLatchDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ccb.interview.thread.CountDownLatchDemo" />
-      <module name="interview2020" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ccb.interview.thread.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.ProducerConsumerDemoVersion2">
     <configuration name="CyclicBarrierDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ccb.interview.thread.CyclicBarrierDemo" />
       <module name="interview2020" />
@@ -244,6 +268,19 @@
     </configuration>
     <configuration name="ProducerConsumerDemoVersion1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ccb.interview.thread.ProducerConsumerDemoVersion1" />
+      <module name="interview2020" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ccb.interview.thread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProducerConsumerDemoVersion2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ccb.interview.thread.ProducerConsumerDemoVersion2" />
       <module name="interview2020" />
       <extension name="coverage">
         <pattern>
@@ -283,11 +320,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProducerConsumerDemoVersion2" />
         <item itemvalue="Application.SyncAndReentrantLockDemo" />
         <item itemvalue="Application.ProducerConsumerDemoVersion1" />
         <item itemvalue="Application.SemaphoreDemo" />
         <item itemvalue="Application.CyclicBarrierDemo" />
-        <item itemvalue="Application.CountDownLatchDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -312,7 +349,8 @@
       <workItem from="1582604187174" duration="539000" />
       <workItem from="1582606675440" duration="1101000" />
       <workItem from="1582613452637" duration="1518000" />
-      <workItem from="1582615888693" duration="2822000" />
+      <workItem from="1582615888693" duration="3314000" />
+      <workItem from="1582621522800" duration="2780000" />
     </task>
     <task id="LOCAL-00001" summary="readWriteLock">
       <created>1582598841720</created>
@@ -363,17 +401,24 @@
       <option name="project" value="LOCAL" />
       <updated>1582614954580</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="synchronized and ReentrantLock">
+      <created>1582618953145</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1582618953145</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24188000" />
+    <option name="totallyTimeSpent" value="27460000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2793177" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28198293" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -383,14 +428,14 @@
       <window_info id="simpleUML" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49840087" weight="0.5406284" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" visible="true" weight="0.39869988" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49626866" visible="true" weight="0.5406284" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4989339" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4989339" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49840087" weight="0.32936078" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" visible="true" weight="0.39869988" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50373137" side_tool="true" visible="true" weight="0.5406284" />
       <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" />
@@ -414,19 +459,8 @@
     <MESSAGE value="cyclicBarrier" />
     <MESSAGE value="semaphoreDemo" />
     <MESSAGE value="producer-consumer v1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="producer-consumer v1.0" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ccb/interview/thread/SyncAndReentrantLockDemo.java</url>
-          <line>58</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="synchronized and ReentrantLock" />
+    <option name="LAST_COMMIT_MESSAGE" value="synchronized and ReentrantLock" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
@@ -686,31 +720,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/util/concurrent/locks/Lock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="1221" column="19" lean-forward="true" selection-start-line="1221" selection-start-column="19" selection-end-line="1221" selection-end-column="19" />
+        <state relative-caret-position="4554">
+          <caret line="231" column="9" selection-start-line="231" selection-start-column="9" selection-end-line="231" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/util/concurrent/locks/ReentrantLock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="334" column="27" lean-forward="true" selection-start-line="334" selection-start-column="27" selection-end-line="334" selection-end-column="27" />
+        <state relative-caret-position="6486">
+          <caret line="334" column="27" selection-start-line="334" selection-start-column="27" selection-end-line="334" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/util/concurrent/locks/Lock.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="231" column="9" selection-start-line="231" selection-start-column="9" selection-end-line="231" selection-end-column="9" />
+        <state relative-caret-position="26818">
+          <caret line="1221" column="19" selection-start-line="1221" selection-start-column="19" selection-end-line="1221" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/util/concurrent/BlockingQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="275" column="6" selection-start-line="275" selection-start-column="6" selection-end-line="275" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ccb/interview/thread/SyncAndReentrantLockDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="56" column="9" lean-forward="true" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+        <state relative-caret-position="546">
+          <caret line="106" column="24" selection-start-line="106" selection-start-column="24" selection-end-line="106" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/java.util.concurrent.BlockingQueue">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>java.util.concurrent.BlockingQueue</OriginalElement>
+          <nodes>
+            <node x="" y="">java.util.Collection</node>
+            <node x="" y="">java.util.concurrent.BlockingQueue</node>
+            <node x="" y="">java.util.Queue</node>
+            <node x="" y="">java.lang.Iterable</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="75.0" y="141.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccb/interview/thread/ProducerConsumerDemoVersion2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1579#1580#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccb/interview/thread/BlockingQueueDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
