@@ -7,25 +7,27 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * 死锁：两个或两个以上线程争抢资源，导致互相等待的状况，若无外力干扰，程序就无法继续运行。
  */
-class DeadLock {
-    private Lock lockA = new ReentrantLock();
-    private Lock lockB = new ReentrantLock();
+class DeadLock implements Runnable{
+    private String lockA;
+    private String lockB;
 
-    public void getA() {
-        lockA.lock();
-        try {
-            System.out.println(Thread.currentThread().getName()+" get lockA");
-        } finally {
-            lockA.unlock();
-        }
+    public DeadLock(String lockA, String lockB) {
+        this.lockA = lockA;
+        this.lockB = lockB;
     }
 
-    public void getB() {
-        lockB.lock();
-        try {
-            System.out.println(Thread.currentThread().getName()+" get lockB");
-        } finally {
-            lockB.unlock();
+    @Override
+    public void run() {
+        synchronized (lockA) {
+            System.out.println(Thread.currentThread().getName()+" get "+lockA);
+            try {
+                TimeUnit.SECONDS.sleep(1);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            synchronized (lockB) {
+                System.out.println(Thread.currentThread().getName()+" get "+lockB);
+            }
         }
     }
 }
@@ -33,25 +35,13 @@ class DeadLock {
 public class DeadLockDemo {
 
     public static void main(String[] args) {
-        DeadLock lock=new DeadLock();
-        new Thread(() -> {
-            lock.getA();
-            try {
-                TimeUnit.SECONDS.sleep(2);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            lock.getB();
-        }, "A").start();
+        String lockA="lockA";
+        String lockB="lockB";
+        new Thread(new DeadLock(lockA,lockB), "A").start();
+        new Thread(new DeadLock(lockB,lockA), "B").start();
 
-        new Thread(() -> {
-            lock.getB();
-            try {
-                TimeUnit.SECONDS.sleep(2);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            lock.getA();
-        }, "B").start();
+        /**
+         * 如何发现死锁： 使用jps命令查看进程号，再使用 jstack [进程号] 查看该进程的线程状态
+         */
     }
 }
