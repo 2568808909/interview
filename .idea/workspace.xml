@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7183bb20-410a-4754-992d-2cda1cbd6680" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ccb/interview/jvm/HelloGC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ccb/interview/thread/DeadLockDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ccb/interview/thread/DeadLockDemo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,15 +21,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ccb/interview/thread/BlockingQueueDemo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ccb/interview/thread/ContainerNotSafeDemo.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -99,14 +90,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ccb/interview/thread/DeadLockDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="43" column="59" selection-start-line="43" selection-start-column="59" selection-end-line="43" selection-end-column="59" />
+            <state relative-caret-position="512">
+              <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ccb/interview/jvm/HelloGC.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -180,6 +180,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ccb/interview/thread/CallableDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ccb/interview/thread/ThreadPoolDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ccb/interview/thread/DeadLockDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccb/interview/jvm/HelloGC.java" />
       </list>
     </option>
   </component>
@@ -237,6 +238,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="interview" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="interview2020" type="b2602c69:ProjectViewProjectNode" />
+              <item name="interview2020" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="interview" type="462c0819:PsiDirectoryNode" />
+              <item name="jvm" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="interview2020" type="b2602c69:ProjectViewProjectNode" />
@@ -303,7 +313,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DeadLockDemo">
+  <component name="RunManager" selected="Application.HelloGC">
     <configuration name="CallableDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ccb.interview.thread.CallableDemo" />
       <module name="interview2020" />
@@ -330,12 +340,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProducerConsumerDemoVersion2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ccb.interview.thread.ProducerConsumerDemoVersion2" />
+    <configuration name="HelloGC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ccb.interview.jvm.HelloGC" />
       <module name="interview2020" />
+      <option name="VM_PARAMETERS" value="-XX:+PrintCommandLineFlags" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ccb.interview.thread.*" />
+          <option name="PATTERN" value="com.ccb.interview.jvm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -343,8 +354,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SyncAndReentrantLockDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ccb.interview.thread.SyncAndReentrantLockDemo" />
+    <configuration name="ProducerConsumerDemoVersion2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ccb.interview.thread.ProducerConsumerDemoVersion2" />
       <module name="interview2020" />
       <extension name="coverage">
         <pattern>
@@ -369,13 +380,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.CallableDemo" />
+      <item itemvalue="Application.DeadLockDemo" />
+      <item itemvalue="Application.HelloGC" />
+      <item itemvalue="Application.ProducerConsumerDemoVersion2" />
+      <item itemvalue="Application.ThreadPoolDemo" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HelloGC" />
         <item itemvalue="Application.DeadLockDemo" />
         <item itemvalue="Application.ThreadPoolDemo" />
         <item itemvalue="Application.CallableDemo" />
         <item itemvalue="Application.ProducerConsumerDemoVersion2" />
-        <item itemvalue="Application.SyncAndReentrantLockDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -405,7 +423,7 @@
       <workItem from="1582634112389" duration="3559000" />
       <workItem from="1582682273667" duration="2708000" />
       <workItem from="1582689717865" duration="1359000" />
-      <workItem from="1582692211686" duration="239000" />
+      <workItem from="1582692211686" duration="6731000" />
     </task>
     <task id="LOCAL-00001" summary="readWriteLock">
       <created>1582598841720</created>
@@ -498,33 +516,50 @@
       <option name="project" value="LOCAL" />
       <updated>1582690196208</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="DeadLock">
+      <created>1582692488475</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1582692488475</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36236000" />
+    <option name="totallyTimeSpent" value="42728000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4988345" visible="true" weight="0.29371002" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4976415" visible="true" weight="0.29371002" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.5011655" side_tool="true" visible="true" weight="0.29371002" />
+      <window_info id="Favorites" order="6" sideWeight="0.5023585" side_tool="true" visible="true" weight="0.29371002" />
       <window_info id="simpleUML" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49253732" weight="0.5406284" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.48880598" visible="true" weight="0.5406284" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4989339" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49093816" visible="true" weight="0.53521127" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.48720682" weight="0.53521127" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5090618" side_tool="true" visible="true" weight="0.53521127" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5127932" side_tool="true" weight="0.52437705" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4989339" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" />
@@ -552,7 +587,8 @@
     <MESSAGE value="blockingQueue" />
     <MESSAGE value="CallableDemo" />
     <MESSAGE value="ThreadPool" />
-    <option name="LAST_COMMIT_MESSAGE" value="ThreadPool" />
+    <MESSAGE value="DeadLock" />
+    <option name="LAST_COMMIT_MESSAGE" value="DeadLock" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
@@ -936,11 +972,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ccb/interview/thread/DeadLockDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="43" column="59" selection-start-line="43" selection-start-column="59" selection-end-line="43" selection-end-column="59" />
+        <state relative-caret-position="512">
+          <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccb/interview/jvm/HelloGC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
         </state>
       </provider>
     </entry>
