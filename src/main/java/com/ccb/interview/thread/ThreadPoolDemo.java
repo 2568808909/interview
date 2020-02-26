@@ -23,7 +23,6 @@ import java.util.concurrent.*;
 public class ThreadPoolDemo {
 
     public static void main(String[] args) throws InterruptedException {
-        Runtime.getRuntime().availableProcessors()
         ExecutorService executor = new ThreadPoolExecutor(
                 2,
                 5,
