@@ -5,6 +5,9 @@ import java.util.Map;
 import java.util.WeakHashMap;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * WeakHashMap在key不在被引用后会删除对应的键值对，估计实现方式是弱引用+引用队列 ：回收弱引用前将其放入引用队列，然后finalize方法执行删除？
+ */
 public class WeakHashMapDemo {
 
     public static void main(String[] args) throws InterruptedException {
