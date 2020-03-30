@@ -2,6 +2,8 @@ package com.ccb.interview.redis;
 
 import org.junit.Test;
 import redis.clients.jedis.Jedis;
+import redis.clients.jedis.Pipeline;
+import redis.clients.jedis.Transaction;
 
 import java.io.FileInputStream;
 import java.io.InputStream;
@@ -41,13 +43,23 @@ public class Example {
 
     @Test
     public void unlockUseLua() {
-        String script="if redis.call(\"get\",KEYS[1]) == ARGV[1] then\n" +
-                "    return redis.call(\"del\",KEYS[1])\n" +
+        String script="local num = tonumber(ARGV[1])\n" +
+                "if num >= 100 then\n" +
+                "    redis.call(\"set\",KEYS[1],num-100)\n" +
+                "    return 100\n" +
                 "else\n" +
-                "    return 0\n" +
+                "    redis.call(\"set\",KEYS[1],0)\n" +
+                "    return num\n" +
                 "end";
-        System.out.println(jedis.eval(script, Collections.singletonList("lock"), Collections.singletonList("10")));
-       // System.out.println(jedis.eval(script, Collections.singletonList("lock"), Collections.singletonList("1")));
+
+        System.out.println(jedis.eval(script, Collections.singletonList("lock"), Collections.singletonList("1000")));
+        // System.out.println(jedis.eval(script, Collections.singletonList("lock"), Collections.singletonList("1")));
+    }
+
+    @Test
+    public void pipe(){
+        Pipeline pipelined = jedis.pipelined();
+        pipelined.sync();
     }
 
 }
