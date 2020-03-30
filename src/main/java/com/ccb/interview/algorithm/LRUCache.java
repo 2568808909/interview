@@ -13,6 +13,7 @@ import java.util.Map;
  * <p>
  * 你是否可以在 O(1) 时间复杂度内完成这两种操作？
  */
+//直接继承LinkHashMap实现起来更加简洁
 class LRUCache extends LinkedHashMap<Integer, Integer> {
 
     private int capacity;
@@ -35,6 +36,7 @@ class LRUCache extends LinkedHashMap<Integer, Integer> {
         return size() > capacity;
     }
 }
+//自己的渣实现
 //class LRUCache {
 //
 //    private int capacity;
